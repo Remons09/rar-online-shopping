@@ -1208,3 +1208,73 @@ a:focus-visible { outline: 3px solid #b69a6d; outline-offset: 4px; }
     .services-grid,.services-full-grid { grid-template-columns: 1fr; }
     .delivery-cards { grid-template-columns: 1fr; }
 }
+
+/* Poster palette: near-black, rose pink, and warm white. */
+:root {
+    --bg: #090a0e;
+    --bg-alt: #111217;
+    --card: #15161c;
+    --border: #49313a;
+    --text: #f5e9eb;
+    --text-dim: #c8b9bd;
+    --rose: #e9758d;
+    --rose-soft: #f18da2;
+    --rose-deep: #bd5068;
+    --rose-glow: rgba(241, 141, 162, .2);
+    --ink: #090a0e;
+}
+
+body { background: var(--bg); color: var(--text); }
+.topbar { background: #06070a; color: #e8dfe1; }
+.header { background: rgba(9,10,14,.96); border-color: var(--border); }
+.logo-mark,.nav a:hover,.nav a[aria-current="page"] { color: var(--rose-soft); }
+.logo-text,.nav a { color: var(--text-dim); }
+.btn-primary { color: #100b0e; background: var(--rose-soft); }
+.btn-primary:hover { color: #100b0e; background: #f6a1b2; box-shadow: 0 8px 20px var(--rose-glow); }
+.btn-outline { color: var(--rose-soft); border-color: var(--rose); }
+.btn-outline:hover { color: #100b0e; background: var(--rose-soft); }
+.btn-whatsapp { color: #100b0e; background: var(--rose-soft); }
+.btn-whatsapp:hover { color: #100b0e; background: #f6a1b2; }
+.hero { color: var(--text); background: radial-gradient(ellipse at 84% 35%, rgba(233,117,141,.2), transparent 38%), linear-gradient(115deg,#090a0e 0%,#111116 61%,#1a1117 100%); }
+.hero::before { color: rgba(255,255,255,.025); }
+.hero::after { border-color: rgba(241,141,162,.25); box-shadow: 0 0 0 28px rgba(241,141,162,.025), 0 0 0 58px rgba(241,141,162,.018); }
+.hero-tag,.section-label,.service-num,.sfc-num,.about-card-label,.contact-block h4,.action-icon,.bill-icon,.value-icon { color: var(--rose-soft); }
+.hero-script { color: var(--rose-soft); }
+.hero-sub,.delivery-sub { color: var(--text-dim); }
+.hero .btn-primary { color: #100b0e; background: var(--rose-soft); }
+.hero .btn-primary:hover { background: #f6a1b2; }
+.hero .btn-outline { color: var(--text); border-color: rgba(245,233,235,.48); }
+.hero .btn-outline:hover { color: #100b0e; background: var(--rose-soft); }
+.trust { background: var(--bg-alt); border-color: var(--border); }
+.trust-icon,.trust-item p { color: var(--rose-soft); }
+.services-preview h2,.bills h2,.delivery h2,.cta h2,.category-title,.location-section h2,
+.about-text h2,.contact-info h2,.contact-actions h2 { color: var(--text); }
+.service-card h3,.service-full-card h3,.bill-item p,.delivery-card h3,.delivery-price,
+.about-card-value,.value-card h3,.action-card h3,.map-address,.cta-phone { color: var(--text); }
+.service-card p,.service-full-card p,.delivery-note,.about-card-note,.value-card p,.action-card p { color: var(--text-dim); }
+.bills,.values-section,.location-section { background: var(--bg-alt); border-color: var(--border); }
+.bill-item:hover { background: rgba(255,255,255,.035); }
+.delivery-card,.about-card,.value-card,.action-card,.map-card { background: var(--card); border-color: var(--border); box-shadow: 0 8px 24px rgba(0,0,0,.22); }
+.delivery-card:hover,.about-card:hover,.value-card:hover,.action-card:hover,.map-card:hover { border-color: var(--rose); box-shadow: 0 12px 28px rgba(0,0,0,.3),0 0 20px var(--rose-glow); }
+.cta { background: #111217; }
+.cta p { color: var(--text-dim); }
+.footer { background: #06070a; }
+.footer h4 { color: var(--rose-soft); }
+.footer p,.footer a { color: var(--text-dim); }
+.footer-bottom { border-color: var(--border); color: var(--text-dim); }
+.float-wa { color: #100b0e; background: var(--rose-soft); box-shadow: 0 8px 24px var(--rose-glow); }
+.float-wa:hover { box-shadow: 0 12px 30px var(--rose-glow); }
+.page-hero { background: linear-gradient(112deg,#090a0e,#1a1117); }
+.page-hero .section-label { color: var(--rose-soft); }
+.page-hero h1 { color: var(--text); }
+.page-hero-sub { color: var(--text-dim); }
+.about-text p,.contact-block p,.contact-link { color: var(--text-dim); }
+.about-list li { color: var(--text); }
+.about-list li::before { color: var(--rose-soft); }
+.contact-info h2::after,.contact-actions h2::after { background: linear-gradient(90deg,var(--rose-soft),transparent); }
+.contact-note p { color: var(--text-dim); }
+.map-card { background: var(--card); }
+.gallery-item { background-image: linear-gradient(145deg,rgba(31,14,21,.12),rgba(7,8,12,.82)) !important; background-color: #37232b; }
+.gallery-item:nth-child(3n+2) { background-image: linear-gradient(145deg,rgba(73,36,49,.1),rgba(8,9,13,.82)) !important; background-color: #412530; }
+.gallery-item:nth-child(3n) { background-image: linear-gradient(145deg,rgba(105,48,65,.08),rgba(8,9,13,.8)) !important; background-color: #4a2632; }
+a:focus-visible { outline-color: var(--rose-soft); }
